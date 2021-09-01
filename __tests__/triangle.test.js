@@ -1,5 +1,5 @@
 
-import Triangle from "./../src/triangle.js";
+import { Triangle } from "../src/js/triangle.js";
 
 describe("Triangle", () => {
 
@@ -25,7 +25,7 @@ describe("Triangle", () => {
     expect(isocTriangle.checkType()).toEqual("isosceles triangle");
   });
 
-  test("should correclty determine whether three lengths make an equilateral triangle", () => {
+  test("should correctly determine whether three lengths make an equilateral triangle", () => {
     const equiTriangle = new Triangle(5,5,5)
     expect(equiTriangle.checkType()).toEqual("equilateral triangle");
   });
